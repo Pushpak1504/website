@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pushpak | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Raleway', sans-serif;
+      color: #fff;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      padding: 0 5%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('profile.jpg') center 20% / cover no-repeat;
+      z-index: 0;
+      animation: revealBackground 2s ease-out forwards;
+      transform: scale(1.2);
+      opacity: 0;
+    }
+
+    @keyframes revealBackground {
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .hero-text {
+      max-width: 600px;
+      position: relative;
+      z-index: 1;
+      animation: fadeInText 1.5s ease-out;
+    }
+
+    @keyframes fadeInText {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero-text h1 {
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero-text h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #ffd369;
+    }
+
+    .hero-text p {
+      margin-bottom: 30px;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      margin: 5px 10px 5px 0;
+      padding: 12px 30px;
+      background-color: #ffd369;
+      color: #222;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      transition: background 0.3s;
+    }
+
+    .cta-btn:hover {
+      background-color: #ffb347;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Hello</h2>
+      <h1>I'm Pushpak</h1>
+      <p>A passionate innovator and hands-on engineer. I love transforming real-world challenges into smart, impactful solutions through design and tech.</p>
+      <a href="contact.html" class="cta-btn">Let's Start</a>
+      <a href="contact.html#projects" class="cta-btn">My Projects</a>
+      <a href="contact.html#contact" class="cta-btn">Contact</a>
+    </div>
+  </section>
+
+</body>
+</html>

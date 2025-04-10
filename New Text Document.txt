@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Intrusion Detection System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #eee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .project {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      max-width: 700px;
+      padding: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .project h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #00bcd4;
+    }
+
+    .project p {
+      line-height: 1.7;
+      font-size: 1rem;
+      color: #ddd;
+      margin-bottom: 20px;
+    }
+
+    .project a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #00bcd4;
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .project a:hover {
+      background-color: #00acc1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="project">
+    <img src="SEA.jpeg" alt="sea">
+    <h2>Beach Cleaning Bot- Hack MIT-WPU 2024</h2>
+    <p>
+      Designed and built an affordable, eco-friendly beach cleaning robot aimed at reducing the need for heavy machinery in public sanitation. The bot features an Arduino-powered chassis equipped with a motor driver shield, servo motors, and a Bluetooth module for wireless control. Using onboard analysis, it detects and classifies different types of beach waste, enabling targeted and efficient collection. Developed to support smart city initiatives and help government bodies reduce beach cleaning costs without compromising environmental care.
+    </p>
+  </div>
+
+</body>
+</html>
